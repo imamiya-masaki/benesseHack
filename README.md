@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # benessehack
 
 ## Project setup
@@ -23,6 +22,3 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
-=======
-# benesseHack
->>>>>>> 2ed6a5f6a32f5d5e961bdb6d53fdbf08ce43eddf
