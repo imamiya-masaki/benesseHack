@@ -5,7 +5,6 @@
     width: 100%;
     z-index: 10;
     background: none;
-    transition: all 0.5s ease;
     background: orange;
 }
 
@@ -16,6 +15,12 @@
     font-size: 5.5vh;
     font-family: 'Tahoma';
     margin-left: 5vw;
+}
+.width60 {
+    width: 60px;
+}
+.home_menu {
+    position: fixed;
 }
 
 .menu {
@@ -29,7 +34,6 @@
 
 .menu li {
     display: inline-block;
-    padding-top: 2.5vh;
     margin-right: 3vw;
 
     font-family: 'Tahoma';
