@@ -1,24 +1,14 @@
 # benessehack
 
-## Project setup
-```
-npm install
-```
+友達と勉強量を競えるアプリ
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## サーバーなどのコンテナの起動方法
+はじめに/frontend/app直下で`npm install`
 
-### Compiles and minifies for production
-```
-npm run build
-```
+(初回時: `docker-compose build`)  
+```docker-compose up -d```
 
-### Lints and fixes files
-```
-npm run lint
-```
+[http://localhost:3000/](http://localhost:3000/) で確認できます．
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## コンテナの終了方法
+```docker-compose stop``` 
