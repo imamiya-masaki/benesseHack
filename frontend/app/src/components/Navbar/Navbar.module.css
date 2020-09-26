@@ -1,0 +1,42 @@
+.menubar {
+    position: fixed;
+    top: 0;
+    height: 12vh;
+    width: 100%;
+    z-index: 10;
+    background: none;
+    transition: all 0.5s ease;
+    background: orange;
+}
+
+.title {
+    float: left;
+    color: white;
+    display: block;
+    font-size: 5.5vh;
+    font-family: 'Tahoma';
+    margin-left: 5vw;
+}
+
+.menu {
+    float: right;
+}
+
+.menu ul {
+    list-style: none;
+    display: inline-block;
+}
+
+.menu li {
+    display: inline-block;
+    padding-top: 2.5vh;
+    margin-right: 3vw;
+
+    font-family: 'Tahoma';
+    font-size: 2vh;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}

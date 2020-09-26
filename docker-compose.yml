@@ -8,7 +8,7 @@ services:
     environment:
       - NODE_ENV=development
     volumes:
-      - ./:/usr/src/app
+      - ./:/usr/src/app:delegated
     command: sh -c "cd frontend/app && yarn start"
     ports:
       - "3000:3000"
