@@ -2,8 +2,6 @@
 
 友達と勉強量を競えるアプリ
 
-## サーバーなどのコンテナの起動方法
-はじめに/frontend/app直下で`npm install`
 
 (初回時: `docker-compose build`)  
 ```docker-compose up -d```
