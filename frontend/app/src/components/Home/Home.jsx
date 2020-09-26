@@ -4,7 +4,7 @@ import Navbar from "../Navbar/Navbar";
 
 const Home = (props) => {
     return (
-        <div>
+        <div className={styles.container}>
             <Navbar />
             Home
         </div>

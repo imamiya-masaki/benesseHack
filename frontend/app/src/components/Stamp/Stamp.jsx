@@ -4,7 +4,7 @@ import Navbar from "../Navbar/Navbar";
 
 const Stamp = (props) => {
     return (
-        <div>
+        <div className={styles.container}>
             <Navbar />
             Stamp
         </div>

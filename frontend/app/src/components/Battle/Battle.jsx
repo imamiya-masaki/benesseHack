@@ -4,7 +4,7 @@ import Navbar from "../Navbar/Navbar";
 
 const Battle = (props) => {
     return (
-        <div>
+        <div className={styles.container}>
             <Navbar />
             Battle
         </div>

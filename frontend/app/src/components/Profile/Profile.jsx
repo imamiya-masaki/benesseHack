@@ -4,9 +4,10 @@ import Navbar from "../Navbar/Navbar";
 
 const Profile = (props) => {
     return (
-        <div>
+        <div className={styles.container}>
             <Navbar />
             Profile
+           
         </div>
     );
 };
