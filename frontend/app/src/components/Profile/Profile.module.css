@@ -1,3 +1,55 @@
 .container {
     padding-top: 12vh;
 }
+
+/* 左カラム  */
+.username {
+    height: 5vh;
+    text-align: left;
+    padding-left: 3vw;
+    padding-top: 4vh;
+    font-size: 3.5vh;
+}
+
+.hissyou {
+    width: 20vw;
+}
+.userimage {
+    margin-bottom: -2vh;
+}
+
+.status h2 {
+    text-align: left;
+    padding-left: 19vw;
+}
+
+.status_contents {
+    
+    width: 20vw;
+    padding: 0.5vh 1vw;
+    margin: 0 18vw;
+    font-weight: bold;
+    color: #6091d3;/*文字色*/
+    background: #FFF;
+    border: solid 3px #6091d3;/*線*/
+    border-radius: 10px;/*角の丸み*/
+}
+
+.status_contents ul {
+    list-style: none;
+}
+
+.status_contents li {
+    font-size: 2vh;
+}
+
+/* 右カラム */
+.log {
+padding-top: 5vh;
+padding-right: 5vw;
+}
+
+.post {
+    padding-top: 3vh;
+    padding-right: 10vw;
+}
