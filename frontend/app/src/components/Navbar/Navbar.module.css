@@ -19,8 +19,13 @@
 .width60 {
     width: 60px;
 }
+.widthlogo {
+    width: 150px;
+    list-style: none;
+}
 .home_menu {
     position: fixed;
+    list-style: none;
 }
 
 .menu {
