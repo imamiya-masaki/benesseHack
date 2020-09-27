@@ -2,9 +2,10 @@ import React, {useState, useEffect} from "react";
 import styles from "./Home.module.css";
 import Navbar from "../Navbar/Navbar";
 import Hissyoukun from "../../images/hissyou_kun.png";
+import MotivonGif from "../../images/stamppush_onetime.gif";
 import axios from "axios";
 const Home = (props) => {
-
+    const [ moveMotivon, setMoveMotivon] = useState(true);
     var [info, SetInfo] = useState()
     var [reload, SetReload] = useState(false)
     useEffect( () => {
@@ -24,6 +25,10 @@ const Home = (props) => {
     return (
         <div className={styles.container}>
             <Navbar />
+            {moveMotivon && (
+                <img src={MotivonGif} className={styles.gif} alt="もちぼん" onClick={() => setMoveMotivon(!moveMotivon)} />
+            )}
+            
             <div class={styles.bodybox}>
             <div class="ui stackable equal width grid">
                 
