@@ -63,3 +63,11 @@ ul{
 .status_contents li {
     font-size: 2vh;
 }
+
+.gif {
+    width: 30vw;
+    z-index: 100;
+    position: absolute;
+    left: 600px;
+    top: -40px;
+}

@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./Home.module.css";
 import Navbar from "../Navbar/Navbar";
 import Hissyoukun from "../../images/hissyou_kun.png";
+import MotivonGif from "../../images/stamppush_onetime.gif";
+
 const Home = (props) => {
+
+
+    const [ moveMotivon, setMoveMotivon] = useState(true);
+
     return (
         <div className={styles.container}>
             <Navbar />
+            {moveMotivon && (
+                <img src={MotivonGif} className={styles.gif} alt="もちぼん" onClick={() => setMoveMotivon(!moveMotivon)} />
+            )}
+            
             <div class={styles.bodybox}>
             <div class="ui stackable equal width grid">
                 
@@ -17,7 +27,7 @@ const Home = (props) => {
                         <ul>
                             <li>今日もログインしてくれてありがとう！</li>
                             <li>今日の勉強量は　５　</li>
-                            <li>今日のスタンプ獲得数は　２　</li>
+                            <li>今日のスタンプ獲得数は　２２　</li>
                             <li>だよ！</li>
                         </ul>
                     </div>
