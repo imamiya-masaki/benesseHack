@@ -8,27 +8,6 @@ import Hissyoukun from "../../images/hissyou_kun.png";
 import Vs from "../../images/vs.png";
 import axios from "axios";
 
-const props = {
-    visible: { 
-      opacity: 1,
-      x: 0
-    },
-    hidden: { 
-      opacity: 0,
-      x: '100%'
-    }
-};
-
-const Battle = (props) => {
-    
-    const [visible, setVisible] = useState(false);
-
-    useEffect(() => {
-        setVisible(true)
-    }, []);
-
-    const MovedStamp = posed.div({});
-
     return (
         <div className={styles.container}>
             <Navbar />
