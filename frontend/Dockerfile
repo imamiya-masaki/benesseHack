@@ -1,3 +1,3 @@
-FROM node:13.2.0-stretch
+FROM node:latest
 
 WORKDIR /usr/src/app
