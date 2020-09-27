@@ -40,8 +40,15 @@ const Stamp = (props) => {
             for (let key of Object.keys(stamp[selectId - 1])) {
                 console.log('check!!', key, stamp, selectId)
                 if (stamp[selectId-1].hasOwnProperty(key) && stamp[selectId-1][key]) {
+                    if (key == "user_id" || key == "id")  {
+                        continue
+                    }
+                    let value = "スタンプ数"
+                    if (key == "stamp_type") {
+                        value = "スタンプ種類"
+                    }
                     console.log('check', stamp[selectId-1])
-                    info.push(<h1>{key} : {stamp[selectId-1][key]}</h1>)
+                    info.push(<h1>{value} : {stamp[selectId-1][key]}</h1>)
                 }
             }
             var infoDOM = []
