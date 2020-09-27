@@ -1,10 +1,26 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import styles from "./Profile.module.css";
 import Navbar from "../Navbar/Navbar";
 import Hissyoukun from "../../images/hissyou_kun.png";
 import Log from "../../images/log.png";
-
+import axios from "axios";
 const Profile = (props) => {
+    var [info, SetInfo] = useState()
+    var [reload, SetReload] = useState(false)
+    useEffect( () => {
+        if (!reload) {
+            getApi()
+            console.log("check", info)
+        }
+    });
+    var getApi = function () {
+        axios.get("http://localhost:8080/api/user_study/" + "1")
+        .then((res) => {
+            console.log("data", res)
+            SetInfo(res.data[0].english_score)
+            SetReload(true)
+        })
+    }
     return (
         <div className={styles.container}>
             <Navbar />
@@ -18,7 +34,7 @@ const Profile = (props) => {
                         <h2>ステータス</h2>
                         <div className={styles.status_contents}>
                             <ul>
-                                <li>攻撃（勉強量）：？？？</li>
+    <li>攻撃（勉強量）：{info}</li>
                                 <li>防御（ログイン回数）：？？？</li>
                                 <li>HP（進研模試偏差値）：？？？</li>
                             </ul>

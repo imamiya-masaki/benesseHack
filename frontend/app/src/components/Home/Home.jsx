@@ -1,8 +1,26 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import styles from "./Home.module.css";
 import Navbar from "../Navbar/Navbar";
 import Hissyoukun from "../../images/hissyou_kun.png";
+import axios from "axios";
 const Home = (props) => {
+
+    var [info, SetInfo] = useState()
+    var [reload, SetReload] = useState(false)
+    useEffect( () => {
+        if (!reload) {
+            getApi()
+            console.log("check", info)
+        }
+    });
+    var getApi = function () {
+        axios.get("http://localhost:8080/api/user_study/" + "1")
+        .then((res) => {
+            console.log("data", res)
+            SetInfo(res.data[0].english_score)
+            SetReload(true)
+        })
+    }
     return (
         <div className={styles.container}>
             <Navbar />
@@ -16,7 +34,7 @@ const Home = (props) => {
                     <div class={styles.balloon_left}>
                         <ul>
                             <li>今日もログインしてくれてありがとう！</li>
-                            <li>今日の勉強量は　５　</li>
+                            <li>今日の勉強量は {info/10}</li>
                             <li>今日のスタンプ獲得数は　２　</li>
                             <li>だよ！</li>
                         </ul>
