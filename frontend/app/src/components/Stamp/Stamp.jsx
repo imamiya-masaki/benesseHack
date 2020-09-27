@@ -41,7 +41,7 @@ const Stamp = (props) => {
                 console.log('check!!', key, stamp, selectId)
                 if (stamp[selectId-1].hasOwnProperty(key) && stamp[selectId-1][key]) {
                     console.log('check', stamp[selectId-1])
-                    info.push(<li>{key} : {stamp[selectId-1][key]}</li>)
+                    info.push(<h1>{key} : {stamp[selectId-1][key]}</h1>)
                 }
             }
             var infoDOM = []
@@ -53,9 +53,11 @@ const Stamp = (props) => {
     }
     return (
         <div className={styles.container}>
+            <div className="ui center aligned grid">
             <Navbar />
             <div className={styles.flex}>
             {output()}
+            </div>
             </div>
         </div>
     );
