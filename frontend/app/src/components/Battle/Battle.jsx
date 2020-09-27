@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import posed from 'react-pose';
 import styles from "./Battle.module.css";
 import Navbar from "../Navbar/Navbar";
 //import Stampkun from "../../images/stamp_kun.png";
@@ -8,6 +7,12 @@ import Hissyoukun from "../../images/hissyou_kun.png";
 import Vs from "../../images/vs.png";
 import axios from "axios";
 
+
+
+
+const Battle = (props) => {
+    
+  
     return (
         <div className={styles.container}>
             <Navbar />
