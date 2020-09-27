@@ -1,3 +1,33 @@
 .container {
     padding-top: 12vh;
 }
+
+.somestamp {
+    width: 90vw;
+}
+
+.hissyoukun {
+    width: 400;
+    position:absolute; 
+    z-index: 2; 
+    height: 100%;
+}
+
+.vs {
+    width: 20vw;
+    position:absolute;
+    z-index: 1; 
+    height: 100%;
+}
+
+.status {
+    position:absolute; 
+    z-index: 3; 
+    height: 100%;
+    top: 70%;
+    right: 20%;
+}
+
+.status ul {
+    list-style: none;
+}
