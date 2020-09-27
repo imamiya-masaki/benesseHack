@@ -15,6 +15,7 @@ const app = (
     <div className="App">
       <span>{}</span>
       <BrowserRouter>
+        <Route path="/login" render={() => <Login/>} exact/>
         <Route path="/" render={() => <Home />} exact />
         <Route path="/stamp" render={() => <Stamp />} exact />
         <Route path="/profile" render={() => <Profile />} exact />
@@ -22,18 +23,18 @@ const app = (
       </BrowserRouter>
     </div>
   )
-const output = function () {
-  console.log("get", global, store.getState())
-  const user = store.getState().user
-  if (!user.hasOwnProperty("user_id")) {
-    return (<Login/>);
-  }
-  return app
-}
+// const output = function () {
+//   console.log("get", global, store.getState())
+//   const user = store.getState().user
+//   if (!user.hasOwnProperty("user_id")) {
+//     return (<Login/>);
+//   }
+//   return app
+// }
 function App() {
   return (
     <Provider store={store}>
-    {output()}
+    {app}
     </Provider>
   );
 }

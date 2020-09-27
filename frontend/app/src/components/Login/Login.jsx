@@ -4,6 +4,7 @@ import Navbar from "../Navbar/Navbar";
 import axios from "axios";
 import { createStore } from 'redux';
 import reducer from './../../reducer';
+import { Link } from "react-router-dom";
 const store = createStore(reducer)
 const Login = (props) => {
     // var status = "login"
@@ -75,7 +76,7 @@ const Login = (props) => {
                       <input type="password" name="password"  value={passId} onChange={onPass} placeholder="Password"/>
                   </div>
                   </div>
-                  <div className="ui fluid large teal submit button" onClick={getApi}>{status}</div>
+                  <Link to="/profile"><div className="ui fluid large teal submit button" onClick={getApi}>{status}</div></Link>
               </div>
 
               <div className="ui error message"></div>

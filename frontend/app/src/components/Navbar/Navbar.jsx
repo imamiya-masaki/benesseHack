@@ -11,7 +11,6 @@ const Navbar = (props) => {
             <div className={styles.namebox}>
                 <Link to="/">
                     <h1 className={styles.title}>
-                        StudyPocket
                     </h1>
                 </Link>
             </div>
