@@ -6,11 +6,11 @@ import Profile from "./components/Profile/Profile";
 import Battle from "./components/Battle/Battle";
 import Login from "./components/Login/Login"
 import './App.css';
-import { createStore } from 'redux';
-import { Provider } from 'react-redux';
-import reducer from './reducer';
+// import { createStore } from 'redux';
+// import { Provider } from 'react-redux';
+// import reducer from './reducer';
 var global = this
-const store = createStore(reducer)
+// const store = createStore(reducer)
 const app = (
     <div className="App">
       <span>{}</span>
@@ -33,9 +33,9 @@ const app = (
 // }
 function App() {
   return (
-    <Provider store={store}>
-    {app}
-    </Provider>
+    <div>
+      {app}
+    </div>
   );
 }
 
