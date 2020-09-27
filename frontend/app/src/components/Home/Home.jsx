@@ -23,7 +23,7 @@ const Home = (props) => {
                     </div>
                     <div class={styles.dummy_box}></div>
                     <div class="column">
-                        <h1>同じ志望校を目指している人の勉強量</h1>
+                        <h1>同じクラスの勉強量</h1>
                         <div class={styles.ranking_box}>
                             <ul>
                                 <li>１位：８スタ（Aさん）</li>
