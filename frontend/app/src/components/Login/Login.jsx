@@ -76,7 +76,7 @@ const Login = (props) => {
                       <input type="password" name="password"  value={passId} onChange={onPass} placeholder="Password"/>
                   </div>
                   </div>
-                  <Link to="/profile"><div className="ui fluid large teal submit button" onClick={getApi}>{status}</div></Link>
+                  <Link to="/"><div className="ui fluid large teal submit button" onClick={getApi}>{status}</div></Link>
               </div>
 
               <div className="ui error message"></div>
